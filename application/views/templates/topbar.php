@@ -15,8 +15,8 @@
             <!-- Topbar Navbar -->
             <ul class="navbar-nav ml-auto">
                 <li>
-                    <div class="row font-weight-bold text-primary" style="margin-right: 200px; margin-top: 18px">
-                        <h3>WEBSITE MANAGER FOR ADMIN BiOd</h3>
+                    <div class="row font-weight-bold text-danger" style="margin-right: 280px; margin-top: 18px">
+                        <h3>Sistem Informasi Kredit Barang BiOd</h3>
                     </div>
                 </li>
                 <div class="topbar-divider d-none d-sm-block"></div>
