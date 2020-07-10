@@ -37,8 +37,8 @@
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
-<script src="<?= base_url('assets/js/canvas_js/canvasjs.min.js'); ?>"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script> -->
+<script src="<?= base_url('assets/js/canvasjs/canvasjs.min.js'); ?>"></script>
 
 <!-- Bootstrap core JavaScript-->
 <script src="<?= base_url('assets/'); ?>vendor/jquery/jquery.min.js"></script>
@@ -50,6 +50,7 @@
 <!-- my JS -->
 <script src="<?= base_url('assets/js/script.js'); ?>"></script>
 <script src="<?= base_url('assets/js/myscript.js'); ?>"></script>
+<script src="<?= base_url('assets/js/myscript1.js'); ?>"></script>
 <!-- Core plugin JavaScript-->
 <script src="<?= base_url('assets/'); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
 
@@ -59,9 +60,7 @@
 
 <!-- Page level custom scripts -->
 <script src="<?= base_url('assets/'); ?>vendor/chart/Chart.min.js"></script>
-<script src="<?= base_url('assets/'); ?>js/demo/chart-area-demo.js"></script>
-<script src="<?= base_url('assets/'); ?>js/demo/chart-pie-demo.js"></script>
-<script src="<?= base_url('assets/'); ?>js/demo/chart-bar-demo.js"></script>
+
 
 <!-- Page level plugins -->
 <script src="<?= base_url('assets/'); ?>vendor/datatables/jquery.dataTables.min.js"></script>

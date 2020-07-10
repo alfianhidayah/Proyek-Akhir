@@ -35,7 +35,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Transaksi Hari Ini</div>
                             <?php if ($harian != null) : ?>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp <?= $harian['total_transaksi']; ?></div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp <?= number_format($harian['total_transaksi']); ?></div>
                             <?php else : ?>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 0</div>
                             <?php endif; ?>
@@ -56,7 +56,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Transaksi Minggu Ini</div>
                             <?php if ($mingguan != null) : ?>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp <?= $mingguan['total_transaksi']; ?></div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp <?= number_format($mingguan['total_transaksi']); ?></div>
                             <?php else : ?>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 0</div>
                             <?php endif; ?>
@@ -77,7 +77,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Transaksi Bulan Ini</div>
                             <?php if ($bulanan != null) : ?>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp <?= $bulanan['total_transaksi']; ?></div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp <?= number_format($bulanan['total_transaksi']); ?></div>
                             <?php else : ?>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 0</div>
                             <?php endif; ?>
@@ -98,7 +98,7 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Transaksi Tahun Ini</div>
                             <?php if ($tahunan != null) : ?>
-                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp <?= $tahunan['total_transaksi']; ?></div>
+                                <div class="h5 mb-0 font-weight-bold text-gray-800">Rp <?= number_format($tahunan['total_transaksi']); ?></div>
                             <?php else : ?>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">Rp 0</div>
                             <?php endif; ?>

@@ -43,8 +43,8 @@
                                     <td><?= $trs['id_transaksi']; ?></td>
                                     <td><?= $trs['id_barang']; ?></td>
                                     <td><?= $trs['nama_kreditor']; ?></td>
-                                    <td><?= $trs['tanggal_transaksi']; ?></td>
-                                    <td><?= $trs['nominal_transaksi']; ?></td>
+                                    <td><?= date("d M Y", strtotime($trs['tanggal_transaksi'])); ?></td>
+                                    <td>Rp. <?= number_format($trs['nominal_transaksi']); ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

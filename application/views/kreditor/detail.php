@@ -20,6 +20,7 @@
                         <li class="list-group-item h6 font-weight-bold">Alamat : <?= $kreditor['alamat']; ?></li>
                         <li class="list-group-item h6 font-weight-bold">NOMOR HP : <?= $kreditor['nomor_hp']; ?></li>
                         <li class="list-group-item h6 font-weight-bold">NOMOR KTP : <?= $kreditor['nomor_ktp']; ?></li>
+                        <!-- <li class="list-group-item h6 font-weight-bold">Kode QR : <?= $kreditor['nomor_ktp']; ?></li> -->
                     </ul>
 
                     <div class="row justify-content-center mt-4">

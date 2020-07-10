@@ -65,8 +65,7 @@ class Kreditor extends CI_Controller
         $data['user'] = $this->db->get_where('user_admin', ['username' => $this->session->userdata('username')])->row_array();
 
         $data['kreditor'] = $this->kreditor->getKreditorById($id);
-        //model barang
-        $data['barang'] = $this->barang->getAllBarangById($id);
+        // $data['kodeqr'] = $this->kreditor->generateQrCode($id);
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar', $data);

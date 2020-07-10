@@ -99,4 +99,9 @@ class Kreditor_model extends CI_Model
         $this->db->where('id_kreditor', $this->input->post('id_kreditor'));
         $this->db->update('kreditor', $data);
     }
+
+    // public function generateQrCode($id)
+    // {
+
+    // }
 }

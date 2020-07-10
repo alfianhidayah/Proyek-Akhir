@@ -18,14 +18,14 @@
                         <li class="list-group-item h6 font-weight-bold">ID Kreditor : <?= $barang_detail['id_kreditor']; ?></li>
                         <li class="list-group-item h6 font-weight-bold">Pemilik Barang : <?= $barang_detail['nama_kreditor']; ?></li>
                         <li class="list-group-item h6 font-weight-bold">Jenis Barang : <?= $barang_detail['tipe_barang']; ?></li>
-                        <li class="list-group-item h6 font-weight-bold">Harga barang : <?= $barang_detail['harga_barang']; ?></li>
-                        <li class="list-group-item h6 font-weight-bold">Uang Muka : <?= $barang_detail['uang_muka']; ?></li>
-                        <li class="list-group-item h6 font-weight-bold">Kredit Total : <?= $barang_detail['kredit_total']; ?></li>
-                        <li class="list-group-item h6 font-weight-bold">Tanggal Masuk : <?= $barang_detail['tanggal_masuk']; ?></li>
+                        <li class="list-group-item h6 font-weight-bold">Harga barang : Rp. <?= number_format($barang_detail['harga_barang']); ?></li>
+                        <li class="list-group-item h6 font-weight-bold">Uang Muka : Rp. <?= number_format($barang_detail['uang_muka']); ?></li>
+                        <li class="list-group-item h6 font-weight-bold">Kredit Total : Rp. <?= number_format($barang_detail['kredit_total']); ?></li>
+                        <li class="list-group-item h6 font-weight-bold">Tanggal Masuk : <?= date("d M Y", strtotime($barang_detail['tanggal_masuk'])); ?></li>
                         <li class="list-group-item h6 font-weight-bold">Jenis Angsuran : <?= $barang_detail['angsuran']; ?></li>
-                        <li class="list-group-item h6 font-weight-bold">Nominal Angsuran : <?= $barang_detail['nominal_angsuran']; ?></li>
-                        <li class="list-group-item h6 font-weight-bold">Kredit Masuk : <?= $barang_detail['kredit_masuk']; ?></li>
-                        <li class="list-group-item h6 font-weight-bold">Sisa Kredit : <?= $barang_detail['sisa_kredit']; ?></li>
+                        <li class="list-group-item h6 font-weight-bold">Nominal Angsuran : Rp. <?= number_format($barang_detail['nominal_angsuran']); ?></li>
+                        <li class="list-group-item h6 font-weight-bold">Kredit Masuk : Rp. <?= number_format($barang_detail['kredit_masuk']); ?></li>
+                        <li class="list-group-item h6 font-weight-bold">Sisa Kredit : Rp. <?= number_format($barang_detail['sisa_kredit']); ?></li>
                         <li class="list-group-item h6 font-weight-bold">Status : <?= $barang_detail['status']; ?></li>
                     </ul>
 

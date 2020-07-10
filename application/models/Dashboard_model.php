@@ -17,7 +17,8 @@ class Dashboard_model extends CI_Model
                     FROM transaksi
                     WHERE YEARWEEK(tanggal_transaksi) = YEARWEEK(NOW())
                     GROUP BY YEARWEEK(tanggal_transaksi)";
-        return $this->db->query($query)->row_array();
+        $data = $this->db->query($query)->row_array();
+        return $data;
     }
 
     public function getDataBulanan()
