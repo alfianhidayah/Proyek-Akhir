@@ -114,6 +114,18 @@ class Barang_model extends CI_Model
 
     public function ubahDataBarang()
     {
+        $kredit_total = $this->input->post('kredit_total');
+        $uang_muka = $this->input->post('uang_muka');
+        $id_barang = $this->input->post('id_barang');
+
+        //ambil data kredit masuk
+        $this->db->select('kredit_masuk');
+        $this->db->from('barang');
+        $this->db->where('id_barang', $id_barang);
+        $kredit_masuk = $this->db->get()->row_array();
+
+        $sisa_kredit = $kredit_total - $uang_muka - $kredit_masuk["kredit_masuk"];
+
         $data = [
             "nama_barang" => $this->input->post('nama_barang', true),
             "barang_id" => $this->input->post('barang_id', true),
@@ -122,6 +134,7 @@ class Barang_model extends CI_Model
             "kredit_total" => $this->input->post('kredit_total', true),
             "angsuran_id" => $this->input->post('angsuran_id', true),
             "nominal_angsuran" => $this->input->post('nominal_angsuran', true),
+            "sisa_kredit" => $sisa_kredit
             // "date_created" => time()
             //kalo dibutuhin tanggal dibuat ya fian :D
         ];

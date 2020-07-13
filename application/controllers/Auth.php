@@ -12,6 +12,9 @@ class Auth extends CI_Controller
 
     public function index()
     {
+        //helper
+        is_after_logged_in();
+
         $this->form_validation->set_rules('username', 'Username', 'required|trim');
         $this->form_validation->set_rules('password', 'Password', 'required|trim');
 
@@ -29,7 +32,6 @@ class Auth extends CI_Controller
     {
         //membersihkan session
         $this->session->unset_userdata('username');
-
         //redirect ke halaman login dan beri flash message
         $this->session->set_flashdata('messages', '<div class="alert alert-success" role="alert"> You have been logout</div>');
         redirect('auth');

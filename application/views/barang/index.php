@@ -143,7 +143,7 @@
                                 <!-- Harga Barang -->
                                 <div class="form-group flex-nowrap">
                                     <label for="harga_barang">Harga Barang</label>
-                                    <input type="text" class="form-control harga formatHarga" id="harga_barang" name="harga_barang" value="<?= set_value('harga_barang'); ?>">
+                                    <input type="text" class="form-control harga" id="harga_barang" name="harga_barang" value="<?= set_value('harga_barang'); ?>">
                                 </div>
                             </div>
 
@@ -151,12 +151,12 @@
                                 <!-- Uang Muka -->
                                 <div class="form-group flex-nowrap">
                                     <label for="uang_muka">Uang Muka</label>
-                                    <input type="text" class="form-control harga formatHarga" id="uang_muka" name="uang_muka" value="<?= set_value('uang_muka'); ?>">
+                                    <input type="text" class="form-control harga" id="uang_muka" name="uang_muka" value="<?= set_value('uang_muka'); ?>">
                                 </div>
                                 <!-- Kredit Total -->
                                 <div class="form-group flex-nowrap">
                                     <label for="kredit_total">Kredit Total</label>
-                                    <input type="text" class="form-control harga formatHarga" id="kredit_total" name="kredit_total" value="<?= set_value('kredit_total'); ?>">
+                                    <input type="text" class="form-control harga" id="kredit_total" name="kredit_total" value="<?= set_value('kredit_total'); ?>">
                                     <small id="passwordHelpBlock" class="form-text text-muted">
                                         Kredit Total adalah Harga kredit yang harus dibayar kreditor
                                     </small>
@@ -183,7 +183,7 @@
                                 <!-- Nominal Angsuran-->
                                 <div class="form-group flex-nowrap">
                                     <label for="nominal_angsuran">Nominal Angsuran</label>
-                                    <input type="text" class="form-control harga formatHarga" id="nominal_angsuran" name="nominal_angsuran" value="<?= set_value('nominal_angsuran'); ?>">
+                                    <input type="text" class="form-control harga" id="nominal_angsuran" name="nominal_angsuran" value="<?= set_value('nominal_angsuran'); ?>">
                                 </div>
 
                             </div>
