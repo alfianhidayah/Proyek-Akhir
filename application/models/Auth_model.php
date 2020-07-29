@@ -11,7 +11,7 @@ class Auth_model extends CI_Model
         $user_admin = $this->db->get_where('user_admin', ['username' => $username])->row_array();
 
         if ($user_admin != null) {
-            if ($password == $user_admin['password']) {
+            if (password_verify($password, $user_admin['password'])) {
                 $data = [
                     'username' => $user_admin['username']
                 ];
