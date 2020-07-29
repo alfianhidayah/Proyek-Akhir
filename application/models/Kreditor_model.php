@@ -69,7 +69,7 @@ class Kreditor_model extends CI_Model
             "alamat" => $this->input->post('alamat_kreditor', true),
             "nomor_hp" => $this->input->post('nomor_hp', true),
             "nomor_ktp" => $this->input->post('nomor_ktp', true),
-            "password" => $this->input->post('password1', true)
+            "password" => password_hash($this->input->post('password1', true), PASSWORD_DEFAULT)
             // "date_created" => time()
             //kalo dibutuhin tanggal dibuat ya fian :D
         ];

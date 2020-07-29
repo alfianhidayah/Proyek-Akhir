@@ -134,7 +134,7 @@
                                 <!-- ID KREDITOR -->
                                 <div class="form-group">
                                     <label for="id_kreditor">ID Kreditor</label>
-                                    <input type="text" class="form-control" id="id_kreditor" name="id_kreditor" value="<?= $get_id_kreditor; ?>" readonly>
+                                    <input type="text" class="form-control ubah_hilang" id="id_kreditor" name="id_kreditor" value="<?= $get_id_kreditor; ?>" readonly>
                                 </div>
                                 <!-- Password KREDITOR -->
                                 <div class="form-group password">
